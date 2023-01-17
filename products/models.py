@@ -9,6 +9,7 @@ class Product(models.Model): #inherit from imported Model class
     price = models.DecimalField(max_digits=8, decimal_places=2) # Decimal field need length for both digits and decimal places
     inventory_quantity = models.IntegerField() #do not need to define places for integer HAVE TO HAVE PARENTHESIS
 
+    # Have to create datbase in MySQL prior to makeing migrations
     # Run python manage.py makemigrations app name in this case it would be python manage.py makemigrations products
     # 'No installed app with label' error have to add new app in project settings under installed apps
     # Once added to setting run python manage.py migrate
